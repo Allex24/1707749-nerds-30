@@ -1,182 +1,195 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="icon.svg">
     <title>Дизайн-студия: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
+    <header class="main-header">
       <div>
-        <a href="index.html">
+        <a  class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
         </a>
-        <nav>
-          <ul>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
             <li><a href="index.html">Студия</a></li>
             <li><a href="blank.html">Клиенты</a></li>
             <li><a>Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
         </nav>
-        <a href="blank.html">Корзина</a>
+        <a class="header-basket" href="blank.html">Корзина</a>
       </div>
 </header>
 
-<main>
+<main class="container">
 
   <h1>Магазин готовых шаблонов</h1>
-  <section>
-    <h2>Фильтр товаров</h2> <!-- заголовок в дальнейшем будет скрыт -->
-     <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend>Цена:</legend>
-        <div></div> <!-- Блок под бегунок -->
+  <section class="preview">
+    <h2 class="hidden-title">Фильтр товаров</h2> <!-- заголовок в дальнейшем будет скрыт -->
+     <form class="form-sorting" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="block-price">
+        <legend class="product-filter text-price">Стоимость:</legend>
+        <div class="price-selection">
+        </div> <!-- Блок под бегунок -->
         <div>
           <span>от</span>
-          <input type="text" name="price_min" value="0" placeholder="0">
+          <input class="price-entry price-min" type="text" name="price_min" value="0" placeholder="0">
         </div>
         <div>
           <span>до</span>
-          <input type="text" name="price_max" value="15000" placeholder="15000">
+          <input class="price-entry price-max" type="text" name="price_max" value="15000" placeholder="15000">
         </div>
       </fieldset>
       <fieldset>
-        <legend>Сетка:</legend>
-        <ul>
-          <li>
+        <legend class="product-filter setka">Сетка:</legend>
+        <ul class="setka-list">
+          <li class="setka-item">
             <input type="radio" name="setka-type" value="adaptive" id="setka-adaptive" checked>
             <label for="setka-adaptive">Адаптивная</label>
           </li>
-          <li>
+          <li class="setka-item">
             <input type="radio" name="setka-type" value="fixed" id="setka-fixed">
             <label for="setka-fixed">Фиксированная</label>
           </li>
-          <li>
+          <li class="setka-item">
             <input type="radio" name="setka-type" value="rubber" id="setka-rubber">
             <label for="setka-rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Особенности:</legend>
-        <ul>
-          <li>
+        <legend class="product-filter feature-selection">Особенности:</legend>
+        <ul class="feature-selection-list">
+          <li class="feature-selection-item">
             <input type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
-          <li>
+          <li class="feature-selection-item">
             <input type="checkbox" name="blok-preimushchestv" id="filter-blok-preimushchestv">
             <label for="filter-blok-preimushchestv">Блок преимуществ</label>
           </li>
-          <li>
+          <li class="feature-selection-item">
             <input type="checkbox" name="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
-          <li>
+          <li class="feature-selection-item">
             <input type="checkbox" name="gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
-          <li>
+          <li class="feature-selection-item">
             <input type="checkbox" name="basket" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
         </fieldset>
-      <button type="submit">Показать</button>
+      <button class="button form-sorting-button" type="submit">Показать</button>
     </form>
   </section>
   <div>
-    <span>Сортировать:</span>
-    <a href="#">по цене</a>
-    <a href="#">по типу</a>
-    <a href="#">по названию</a>
-    <a href="#">
-      <img src="img/icon-down.svg" width="11" height="10" alt="сортировать по убыванию">
+    <span class="product-filter sort" >Сортировать:</span>
+    <a class="sort-link" href="#">по цене</a>
+    <a class="sort-link" href="#">по типу</a>
+    <a class="sort-link" href="#">по названию</a>
+    <a class="sort-link" href="#">
+      <img class="sort-icon icon-down" src="img/icon-down.svg" width="11" height="10" alt="сортировать по убыванию">
     </a>
-    <a href="#">
-      <img src="img/icon-up.svg" width="11" height="10" alt="сортировать по восрастания">
+    <a class="sort-link" href="#">
+      <img class="sort-icon icon-up" src="img/icon-up.svg" width="11" height="10" alt="сортировать по восрастания">
     </a>
   </div>
-  <section>
-    <h2>Список готовых шаблонов</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <ul>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
+  <section class="templates">
+    <h2 class="hidden-title">Список готовых шаблонов</h2> <!-- заголовок в дальнейшем будет скрыт -->
+    <ul class="templates-list">
+      <li class="templates-item">
+        <div class="templates-slider"></div> <!-- блок под слайдер -->
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
         </a>
       </li>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/pink.jpg" width="358" height="578" alt="шаблон Pink">
+      <li class="templates-item">
+        <div class="templates-slider"> <!-- блок под слайдер -->
+        </div>
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/pink.jpg" width="358" height="578" alt="шаблон Pink">
         </a>
       </li>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/barbershop-borodinski.jpg" width="358" height="578" alt="шаблон Barbershop Borodinski">
+      <li class="templates-item">
+        <div class="templates-slider"> <!-- блок под слайдер -->
+        </div>
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/barbershop-borodinski.jpg" width="358" height="578" alt="шаблон Barbershop Borodinski">
         </a>
       </li>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/mishka.jpg" width="358" height="578" alt="шаблон Mishka">
+      <li class="templates-item">
+        <div class="templates-slider"> <!-- блок под слайдер -->
+        </div>
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/mishka.jpg" width="358" height="578" alt="шаблон Mishka">
         </a>
       </li>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/a.jpg" width="358" height="578" alt="шаблон A+">
+      <li class="templates-item">
+        <div class="templates-slider"> <!-- блок под слайдер -->
+        </div>
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/a.jpg" width="358" height="578" alt="шаблон A+">
         </a>
       </li>
-      <li>
-        <div></div> <!-- блок под слайдер -->
-        <a href="blank.html">
-        <img src="img/kvast.jpg" width="358" height="578" alt="шаблон Кваст">
+      <li class="templates-item">
+        <div class="templates-slider"> <!-- блок под слайдер -->
+        </div>
+        <a class="templates-link" href="blank.html">
+        <img class="templates-img" src="img/kvast.jpg" width="358" height="578" alt="шаблон Кваст">
         </a>
       </li>
     </ul>
-    <ul>
-      <li>
-        <a>1</a>
+    <div class="pagination">
+    <ul class="pagination-list">
+      <li class="pagination-item pagination-item-one">
+        <a class="pagination-link">1</a>
       </li>
-      <li>
-        <a href="#">2</a>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
       </li>
-      <li>
-        <a href="#">3</a>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
       </li>
-      <li>
-        <a href="#">Следующая</a>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">Следующая</a>
       </li>
     </ul>
+    </div>
+
   </section>
   <section>
-    <h2>Как нас найти</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <img src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
-    <div>
+    <h2 class="hidden-title">Как нас найти</h2> <!-- заголовок в дальнейшем будет скрыт -->
+    <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
+    <div class="contacts-information">
       <span>NЁRDS DESIGN STUDIO</span>
       <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
-      <button type="submit">Напишите нам</button>
+      <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
+      <button class="button" type="submit">Напишите нам</button>
     </div>
-    <img src="img/map-marker.png" width="231" height="190" alt="точка на карте">
+    <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
   </section>
 
 </main>
 
-<footer>
-  <ul>
-      <li>
-        <a href="#">Вконтакте</a>
+<footer class="main-footer">
+  <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="social-button" href="#">Вконтакте</a>
       </li>
-      <li>
-        <a href="#">Фейсбук</a>
+      <li class="footer-social-item">
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
-      <li>
-        <a href="#">Инстаграм</a>
+      <li class="footer-social-item">
+        <a class="social-button" href="#">Инстаграм</a>
       </li>
   </ul>
     <h2>Давайте дружить, это выгодно!</h2>
