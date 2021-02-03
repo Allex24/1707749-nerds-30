@@ -5,49 +5,49 @@
     <link rel="icon" href="icon.svg">
     <title>Дизайн-студия: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body class="page-body">
 
-    <header class="main-header">
-      <div>
-        <a  class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
-        </a>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a href="index.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a>Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="header-basket" href="blank.html">Корзина</a>
+  <header class="main-header">
+    <div class="main-navigation-wrapper">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
+      </a>
+      <div class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a>Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
       </div>
-</header>
+      <a class="header-basket" href="blank.html">Корзина</a>
+    </div>
+  </header>
 
 <main class="container">
-
-  <h1>Магазин готовых шаблонов</h1>
+  <h1 class="title-catalog">Магазин готовых шаблонов</h1>
   <section class="preview">
     <h2 class="hidden-title">Фильтр товаров</h2> <!-- заголовок в дальнейшем будет скрыт -->
      <form class="form-sorting" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="block-price">
-        <legend class="product-filter text-price">Стоимость:</legend>
+        <legend>Стоимость:</legend>
         <div class="price-selection">
         </div> <!-- Блок под бегунок -->
-        <div>
+        <div class="price">
           <span>от</span>
           <input class="price-entry price-min" type="text" name="price_min" value="0" placeholder="0">
         </div>
-        <div>
+        <div class="price">
           <span>до</span>
           <input class="price-entry price-max" type="text" name="price_max" value="15000" placeholder="15000">
         </div>
       </fieldset>
       <fieldset>
-        <legend class="product-filter setka">Сетка:</legend>
+        <legend>Сетка:</legend>
         <ul class="setka-list">
           <li class="setka-item">
             <input type="radio" name="setka-type" value="adaptive" id="setka-adaptive" checked>
@@ -64,7 +64,7 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend class="product-filter feature-selection">Особенности:</legend>
+        <legend>Особенности:</legend>
         <ul class="feature-selection-list">
           <li class="feature-selection-item">
             <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -91,9 +91,9 @@
       <button class="button form-sorting-button" type="submit">Показать</button>
     </form>
   </section>
-  <div>
-    <span class="product-filter sort" >Сортировать:</span>
-    <a class="sort-link" href="#">по цене</a>
+  <div class="product-filter">
+    <span>Сортировать:</span>
+    <a class="sort-link sort-link-active" href="#">по цене</a>
     <a class="sort-link" href="#">по типу</a>
     <a class="sort-link" href="#">по названию</a>
     <a class="sort-link" href="#">
@@ -166,7 +166,7 @@
     </div>
 
   </section>
-  <section>
+  <section class="contacts">
     <h2 class="hidden-title">Как нас найти</h2> <!-- заголовок в дальнейшем будет скрыт -->
     <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
     <div class="contacts-information">
@@ -195,6 +195,5 @@
     <h2>Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
 </footer>
-
   </body>
 </html>

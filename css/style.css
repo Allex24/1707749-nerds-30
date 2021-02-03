@@ -11,6 +11,8 @@
   --link-hover-color:#FB565A;
   --link-active-color:#A6A6A6;
   --line-link-color:#FB565A;
+  --button-grey-hover-color:#DFDFDF;
+  --button-grey-activ-color:#D5D5D5;
   --button-red-color:#FB565A;
   --button-red-hover-color:#E74246;
   --button-red-activ-color:#D7373B;;
@@ -21,11 +23,12 @@
   --button-yellow-hover-cokor:#EAB534;
   --button-yellow-activ-color:#E5A722;
   --text-bottom-color:#FFFFFF;
+
  }
 
 /* Global */
 
-body {
+.page-body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
@@ -35,6 +38,11 @@ body {
   font-weight: 400;
   color: var(--text-color-grey);
   background-color: var(--site-background);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -54,7 +62,155 @@ ul {
   display:none;
 }
 
+.main-header,
+.preview,
+.title-catalog {
+  background-color: var(--main-slide-color);
+}
+
+.preview-slogan {
+  margin-top: 0px;
+}
+
+.title-catalog {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--text-color-black);
+  margin-top: 0;
+  padding-bottom: 108px;
+  text-align: center;
+}
+
+
+/* form-sorting */
+
+.form-sorting {
+  background-color: var(--site-background);
+}
+
+.form-sorting legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-black);
+}
+
+.price span {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color-grey);
+}
+
+.price-entry {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color-grey);
+}
+
+.form-sorting ul {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color-grey);
+  style: none;
+
+}
+
+.form-sorting-button {
+  width: 260px;
+  height: 50px;
+  background-color: var(--main-slide-color);
+  color: var(--text-color-black);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+}
+
+.form-sorting-button:hover {
+  background-color: var(--button-grey-hover-color);
+}
+
+.form-sorting-button:active {
+  background-color: var(--button-grey-activ-color);
+  color: rgb(179, 179, 179);
+}
+
+
+/* product-filter */
+
+.product-filter span {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-black);
+
+}
+
+.product-filter .sort-link-active {
+  color: var(--text-color-black);
+  opacity: 1;
+}
+
+
+.product-filter a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-black);
+  opacity: 0.3;
+}
+
+
+.product-filter a:hover {
+  color: var(--text-color-black);
+  opacity: 0.6;
+}
+
+.product-filter a:active {
+  color: var(--text-color-black);
+}
+
+
+/* pagination */
+
+.pagination-item a {
+  background-color: var(--main-slide-color);
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-color-black);
+}
+
+.pagination-item-one a,
+.pagination-item-one a:hover,
+.pagination-item-one a:active {
+  background-color: var(--site-background);
+}
+
+.pagination-item a:hover {
+  background-color: var(--button-grey-hover-color);
+}
+
+.pagination-item a:active {
+  background-color: var(--button-grey-activ-color);
+  color: rgb(179, 179, 179);
+}
+
+
 /* Main navigation */
+
+.main-header {
+  display: grid;
+
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
+  width: 1157px;
+  margin: 0 auto;
+  margin-top: 75px;
+
+}
 
 .main-navigation {
   font-size: 16px;
@@ -67,10 +223,6 @@ ul {
 /* container */
 
 
-.main-header, .preview {
-  background-color: var(--main-slide-color);
-}
-
 .site-navigation a,
 .header-basket {
   color: var(--link-color);
@@ -81,9 +233,10 @@ ul {
   color: var(--link-hover-color);
 }
 
-site-navigation a:active,
+.site-navigation a:active,
 .header-basket:active {
   color: var(--link-active-color);
+  opacity: 0.3;
 }
 
 
@@ -99,11 +252,25 @@ site-navigation a:active,
 
 /* section features */
 
+.features {
+  margin: 0 auto;
+  width: 1157px;
+
+}
+
 h3 {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  column-gap: 100px;
+
 
 
 /* section benefits */
@@ -151,3 +318,10 @@ h5 {
   line-height: 22px;
   color: var(--footer-text-color);
   }
+
+
+
+
+
+
+
