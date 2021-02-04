@@ -5,43 +5,48 @@
     <link rel="icon" href="icon.svg">
     <title>Дизайн-студия: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
 
   <header class="main-header">
     <div class="main-navigation-wrapper">
-    <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
-    </a>
-    <div class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-    </div>
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
+      </a>
+      <div class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
       <a class="header-basket" href="blank.html">Корзина</a>
     </div>
   </header>
 
 <main class="container">
-  <h1 class="hidden-title">Дизайн-студия «Нёрдс»</h1> <!-- заголовок в дальнейшем будет скрыт -->
+  <h1 class="hidden-title">Дизайн-студия «Нёрдс»</h1> <!-- скрытый заголовок -->
   <section class="preview">
-    <h2 class="hidden-title">Дизайн для Вашено сайта</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <p class="preview-slogan">Долго, дорого, <br>скрупулезно</p>
-    <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-    <a class="button" href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-    <div class="slider"> <!-- блок под слайдер -->
-      <img src="img/nerds-index-slide-1.png" width="760" height="431" alt="Первый слайдер">
+    <div class="preview-block">
+      <div class="preview-left">
+        <h2 class="hidden-title">Дизайн для Вашено сайта</h2> <!-- скрытый заголовок -->
+          <p class="preview-slogan">Долго, дорого, <br>скрупулезно</p>
+          <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+          <a class="button" href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
+      </div>
+      <div class="slider"> <!-- блок под слайдер -->
+        <img src="img/nerds-index-slide-1.png" width="760" height="431" alt="Первый слайдер">
+      </div>
     </div>
   </section>
 
   <section class="features">
-    <h2 class="hidden-title">Наши услуги</h2> <!-- заголовок в дальнейшем будет скрыт -->
+    <div class="feature-block">
+    <h2 class="hidden-title">Наши услуги</h2> <!-- скрытый заголовок -->
     <ul class="features-list">
       <li class="feature-item">
         <img class="feature-img" src="img/web-sites.jpg" width="300" height="146" alt="Веб-сайты">
@@ -62,77 +67,93 @@
         <a class="button feature-button" href="blank.html">Заказать</a>
       </li>
     </ul>
+    </div>
   </section>
 
   <section class="benefits">
-    <h2 class="hidden-title">О нас</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <p class="benefits-slogan">Мы — маленькая, но гордая <br>дизайн-студия из Краснодара.</p>
-    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>превыше креатива. Работаем не покладая рук, как роботы.</p>
-    <h5>Выполняем заказы на разработку</h5>
-    <ul class="benefits-list">
-      <li class="benefits-item">Веб-сайтов любой сложности</li>
-      <li class="benefits-item">Мобильных приложений для iOS и Android</li>
-      <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
-    </ul>
-    <img class="benefits-img" src="img/nerds-illustration.png" width="360" height="208" alt="Дизайн-студия Нёрдс">
-    <h5>с 2004 года Любим точность во всем:</h5>
-    <div class="accuracy">
-      <span class="accuracy-percent">146</span>
-      <span class="accuracy-warranty">Уровень самоотдачи</span>
+    <h2 class="hidden-title">О нас</h2> <!-- скрытый заголовок -->
+    <div class="benefits-left-block">
+      <p class="benefits-slogan">Мы — маленькая, но гордая <br>дизайн-студия из Краснодара.</p>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <h5>Выполняем заказы на разработку</h5>
+      <ul class="benefits-list">
+        <li class="benefits-item">Веб-сайтов любой сложности</li>
+        <li class="benefits-item">Мобильных приложений для iOS и Android</li>
+        <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
     </div>
-    <div class="accuracy">
-      <span class="accuracy-percent">100</span>
-      <span class="accuracy-warranty">Соблюдение сроков</span>
-    </div>
-    <div class="accuracy">
-      <span class="accuracy-percent">50</span>
-      <span class="accuracy-warranty">Минимальная предоплата</span>
+    <div class="benefits-right-block">
+      <img class="benefits-img" src="img/nerds-illustration.png" width="360" height="208" alt="Дизайн-студия Нёрдс">
+      <h5>с 2004 года Любим точность во всем:</h5>
+      <div class="accuracy">
+        <span class="accuracy-percent">146</span>
+        <span class="accuracy-warranty">Уровень самоотдачи</span>
+      </div>
+      <div class="accuracy">
+        <span class="accuracy-percent">100</span>
+        <span class="accuracy-warranty">Соблюдение сроков</span>
+      </div>
+      <div class="accuracy">
+        <span class="accuracy-percent">50</span>
+        <span class="accuracy-warranty">Минимальная предоплата</span>
+      </div>
     </div>
   </section>
 
   <section class="partners">
-    <h2 class="hidden-title">Наши партнеры</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <ul class="partners-list">
-      <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="199" height="68" alt="htmlacademy"></a></li>
-    </ul>
-    <ul>
-      <li class="partners-item"><a href="blank.html"><img src="img/barbershop.svg" width="209" height="90" alt="Барбершоп Бородинский"></a></li>
-    </ul>
-    <ul class="partners-list">
-      <li class="partners-item"><a href="blank.html"><img src="img/pink.svg" width="185" height="52" alt="pink"></a></li>
-    </ul>
-    <ul class="partners-list">
-      <li class="partners-item"><a href="blank.html"><img src="img/mishka.svg" width="173" height="84" alt="mishka"></a></li>
-    </ul>
-  </section>
-  <section class="contacts">
-    <h2 class="hidden-title">Как нас найти</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
-    <div class="contacts-information">
-      <span>NЁRDS DESIGN STUDIO</span>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
-      <button class="button" type="submit">Напишите нам</button>
+    <h2 class="hidden-title">Наши партнеры</h2> <!-- скрытый заголовок -->
+    <div class="partners-block">
+      <ul class="partners-list">
+        <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="199" height="68" alt="htmlacademy"></a></li>
+      </ul>
+      <ul>
+        <li class="partners-item"><a href="blank.html"><img src="img/barbershop.svg" width="209" height="90" alt="Барбершоп Бородинский"></a></li>
+      </ul>
+      <ul class="partners-list">
+        <li class="partners-item"><a href="blank.html"><img src="img/pink.svg" width="185" height="52" alt="pink"></a></li>
+      </ul>
+      <ul class="partners-list">
+        <li class="partners-item"><a href="blank.html"><img src="img/mishka.svg" width="173" height="84" alt="mishka"></a></li>
+      </ul>
     </div>
-    <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
+  </section>
+
+  <section class="contacts">
+    <div class="contacts-block">
+      <h2 class="hidden-title">Как нас найти</h2> <!-- скрытый заголовок -->
+      <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
+      <div class="contacts-information">
+        <span>NЁRDS DESIGN STUDIO</span>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
+        <button class="button" type="submit">Напишите нам</button>
+      </div>
+      <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
+    </div>
   </section>
 
 </main>
 
 <footer class="main-footer">
-  <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Вконтакте</a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Фейсбук</a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Инстаграм</a>
-      </li>
-  </ul>
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+  <div class="main-footer-block">
+    <div class="footer-social-list-block">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-title">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
 </footer>
   </body>
 </html>

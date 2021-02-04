@@ -198,18 +198,14 @@ ul {
 
 /* Main navigation */
 
-.main-header {
-  display: grid;
-
-}
 
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
+  align-items: center;
   width: 1157px;
   margin: 0 auto;
   margin-top: 75px;
-
 }
 
 .main-navigation {
@@ -220,7 +216,10 @@ ul {
   background-color: transparent;
 }
 
-/* container */
+.main-navigation {
+  padding-left: 202px;
+}
+
 
 
 .site-navigation a,
@@ -239,23 +238,44 @@ ul {
   opacity: 0.3;
 }
 
+.site-navigation li {
+  display: inline-block;
+  padding-right: 45px;
+}
 
 /* preview */
+
+
 
 .preview-slogan {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin-top: 78px;
   color: var(--text-color-black);
 }
 
 
+.preview-block {
+  display: grid;
+  grid-template-columns: auto 760px;
+  width: 1157px;
+  margin: 0 auto;
+}
+
 /* section features */
+
+.feature-block {
+  padding-right: 60px;
+
+}
 
 .features {
   margin: 0 auto;
-  width: 1157px;
-
+  width: 1158px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 h3 {
@@ -270,10 +290,21 @@ h3 {
   margin: 0;
   padding: 0;
   column-gap: 100px;
+}
 
 
 
 /* section benefits */
+
+.benefits {
+  width: 1158px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  border-bottom: 2px solid #EEEEEE;
+}
 
 .benefits-slogan {
   font-weight: 500;
@@ -289,8 +320,6 @@ h5 {
   color: var(--text-color-grey);
 }
 
-/* section benefits */
-
 .contacts-information span {
   font-size: 18px;
   line-height: 30px;
@@ -304,8 +333,44 @@ h5 {
   color: var(--text-contacts-information-color);
 }
 
+.accuracy-percent {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--text-color-black);
+}
+
+/* partners */
+
+.partners-block {
+  width: 1158px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+/* contacts" */
+
+.contacts-block {
+  padding-top: 80px;
+  padding-bottom: 68px;
+  width: 1440px;
+  margin: 0 auto;
+}
 
 /* main-footer */
+
+.main-footer-block {
+  width: 1158px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 68px;
+}
 
 .main-footer h2{
   font-size: 36px;
@@ -314,11 +379,18 @@ h5 {
   }
 
   .main-footer p {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 22px;
   color: var(--footer-text-color);
   }
 
+.footer-social-list li{
+  display: inline-block;
+}
+
+.footer-social-list-block {
+  padding-right: 139px;
+}
 
 
 
