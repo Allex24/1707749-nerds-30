@@ -20,7 +20,7 @@
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
+        <li><a class="link-page">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
     </div>
@@ -29,9 +29,13 @@
   </header>
 
 <main class="container">
+
   <h1 class="title-catalog">Магазин готовых шаблонов</h1>
+
+  <div class="page-catalog">
   <section class="preview">
     <h2 class="hidden-title">Фильтр товаров</h2> <!-- заголовок в дальнейшем будет скрыт -->
+
      <form class="form-sorting" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="block-price">
         <legend>Стоимость:</legend>
@@ -91,25 +95,27 @@
       <button class="button form-sorting-button" type="submit">Показать</button>
     </form>
   </section>
+
   <div class="product-filter">
-    <span>Сортировать:</span>
-    <a class="sort-link sort-link-active" href="#">по цене</a>
-    <a class="sort-link" href="#">по типу</a>
-    <a class="sort-link" href="#">по названию</a>
-    <a class="sort-link" href="#">
+      <span>Сортировать:</span>
+      <a class="sort-link sort-link-active" href="#">по цене</a>
+      <a class="sort-link" href="#">по типу</a>
+      <a class="sort-link" href="#">по названию</a>
+      <a class="sort-link" href="#">
       <img class="sort-icon icon-down" src="img/icon-down.svg" width="11" height="10" alt="сортировать по убыванию">
-    </a>
-    <a class="sort-link" href="#">
+      </a>
+      <a class="sort-link" href="#">
       <img class="sort-icon icon-up" src="img/icon-up.svg" width="11" height="10" alt="сортировать по восрастания">
-    </a>
+      </a>
   </div>
+
   <section class="templates">
     <h2 class="hidden-title">Список готовых шаблонов</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <ul class="templates-list">
-      <li class="templates-item">
-        <div class="templates-slider"></div> <!-- блок под слайдер -->
-        <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
+      <ul class="templates-list">
+        <li class="templates-item">
+          <div class="templates-slider"></div> <!-- блок под слайдер -->
+          <a class="templates-link" href="blank.html">
+          <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
         </a>
       </li>
       <li class="templates-item">
@@ -164,36 +170,45 @@
       </li>
     </ul>
     </div>
-
+  </div>
   </section>
+
   <section class="contacts">
-    <h2 class="hidden-title">Как нас найти</h2> <!-- заголовок в дальнейшем будет скрыт -->
-    <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
-    <div class="contacts-information">
-      <span>NЁRDS DESIGN STUDIO</span>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
-      <button class="button" type="submit">Напишите нам</button>
+    <div class="contacts-block">
+      <h2 class="hidden-title">Как нас найти</h2> <!-- скрытый заголовок -->
+      <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
+      <div class="contacts-information">
+        <span>NЁRDS DESIGN STUDIO</span>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
+        <button class="button" type="submit">Напишите нам</button>
+      </div>
+      <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
     </div>
-    <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
   </section>
 
 </main>
 
 <footer class="main-footer">
-  <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Вконтакте</a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Фейсбук</a>
-      </li>
-      <li class="footer-social-item">
-        <a class="social-button" href="#">Инстаграм</a>
-      </li>
-  </ul>
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+  <div class="main-footer-block">
+    <div class="footer-social-list-block">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-title">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
 </footer>
   </body>
 </html>

@@ -49,6 +49,11 @@ a {
   text-decoration: none;
 }
 
+a.link-page {
+  padding-bottom: 13px;
+  border-bottom: 2px solid #FB565A;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -77,14 +82,36 @@ ul {
   line-height: 55px;
   color: var(--text-color-black);
   margin-top: 0;
+  padding-top: 72px;
   padding-bottom: 108px;
   text-align: center;
 }
 
 
+/* catalog */
+
+
+.page-catalog {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-row-gap: px;
+  grid-column-gap: 140px;
+  grid-template-rows: 30px 1fr;
+}
+
+.templates {
+  grid-column-start:  2;
+  grid-row-start: 2;
+}
+
+
+
 /* form-sorting */
 
-.form-sorting {
+.preview {
   background-color: var(--site-background);
 }
 
@@ -108,11 +135,28 @@ ul {
 }
 
 .form-sorting ul {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: var(--text-color-grey);
   style: none;
+}
 
+.form-sorting fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+  border: none;
+}
+
+.form-sorting fieldset:first-child {
+  margin-bottom: 43px;
+}
+
+.price-selection {
+  margin-top: 48px;
+}
 }
 
 .form-sorting-button {
@@ -138,12 +182,24 @@ ul {
 
 /* product-filter */
 
+.product-filter {
+  padding-bottom: 48px;
+}
+
+.product-filter span {
+  padding-right: 266px;
+}
+
+.sort-link {
+  padding-right: 25px;
+  padding-left: 0px;
+}
+
 .product-filter span {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--text-color-black);
-
 }
 
 .product-filter .sort-link-active {
@@ -172,6 +228,16 @@ ul {
 
 
 /* pagination */
+
+.templates {
+  margin-top: 48px;
+}
+
+.templates-list{
+  padding: 0;
+  margin: 0;
+
+}
 
 .pagination-item a {
   background-color: var(--main-slide-color);
@@ -313,10 +379,11 @@ h3 {
   color: var(--text-color-black);
 }
 
-h5 {
+.benefits-right-block h5 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
   color: var(--text-color-grey);
 }
 
@@ -338,6 +405,24 @@ h5 {
   font-size: 45px;
   line-height: 64px;
   color: var(--text-color-black);
+}
+
+.accuracy-warranty {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-color-grey);
+}
+
+.accuracy-block {
+  display: flex;
+}
+
+.accuracy.accuracy-one,
+.accuracy.accuracy-two,
+.accuracy.accuracy-three {
+  max-width: 125px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* partners */
