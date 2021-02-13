@@ -13,18 +13,20 @@
 
   <header class="main-header">
     <div class="main-navigation-wrapper">
-    <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
-    </a>
-    <div class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a class="link-page">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-    </div>
-      <a class="header-basket" href="blank.html">Корзина</a>
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизай-студии «Нёрдс»">
+      </a>
+      <div class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a class="link-page">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="basket">
+        <a class="header-basket" href="blank.html">Корзина</a>
+      </div>
     </div>
   </header>
 
@@ -34,7 +36,7 @@
 
   <div class="page-catalog">
   <section class="preview">
-    <h2 class="hidden-title">Фильтр товаров</h2> <!-- заголовок в дальнейшем будет скрыт -->
+    <h2 class="hidden-title">Фильтр товаров</h2>
 
      <form class="form-sorting" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="block-price">
@@ -92,7 +94,7 @@
           </li>
         </ul>
         </fieldset>
-      <button class="button form-sorting-button" type="submit">Показать</button>
+      <button class="button-form" type="submit">Показать</button>
     </form>
   </section>
 
@@ -101,10 +103,10 @@
       <a class="sort-link sort-link-active" href="#">по цене</a>
       <a class="sort-link" href="#">по типу</a>
       <a class="sort-link" href="#">по названию</a>
-      <a class="sort-link" href="#">
+      <a class="arrow-sort-link" href="#">
       <img class="sort-icon icon-down" src="img/icon-down.svg" width="11" height="10" alt="сортировать по убыванию">
       </a>
-      <a class="sort-link" href="#">
+      <a class="arrow-sort-link" href="#">
       <img class="sort-icon icon-up" src="img/icon-up.svg" width="11" height="10" alt="сортировать по восрастания">
       </a>
   </div>
@@ -114,49 +116,99 @@
      <div class="templates-block">
       <ul class="templates-list">
         <li class="templates-item">
-          <div class="templates-slider"></div> <!-- блок под слайдер -->
+          <div class="templates-slider">
+            <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
+          </div>
           <a class="templates-link" href="blank.html">
           <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
-        </a>
+          </a>
+        <div class="pay-block pay-block-sedona">
+          <h3 class="pay-block-title">Sedona</h3>
+            <p class="pay-block-text">
+              Информационный сайт<br> для туристов
+            </p>
+          <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider"> <!-- блок под слайдер -->
+        <div class="templates-slider">
+          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
         </div>
         <a class="templates-link" href="blank.html">
         <img class="templates-img" src="img/pink.jpg" width="358" height="578" alt="шаблон Pink">
         </a>
+        <div class="pay-block pay-block-pink-app">
+          <h3 class="pay-block-title">Pink App</h3>
+            <p class="pay-block-text">
+              Продуктовый лендинг<br> приложения для iOS и Android
+            </p>
+          <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider"> <!-- блок под слайдер -->
+        <div class="templates-slider">
+          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
         </div>
         <a class="templates-link" href="blank.html">
         <img class="templates-img" src="img/barbershop-borodinski.jpg" width="358" height="578" alt="шаблон Barbershop Borodinski">
         </a>
+        <div class="pay-block pay-block-barbershop">
+          <h3 class="pay-block-title">Barbershop</h3>
+            <p class="pay-block-text">
+              Сайт салона красоты.<br> Для мужчин, да.
+            </p>
+          <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider"> <!-- блок под слайдер -->
+        <div class="templates-slider">
+          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
         </div>
         <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/mishka.jpg" width="358" height="578" alt="шаблон Mishka">
+          <img class="templates-img" src="img/mishka.jpg" width="358" height="578" alt="шаблон Mishka">
         </a>
+        <div class="pay-block pay-block-mishka">
+          <h3 class="pay-block-title">MISHKA</h3>
+            <p class="pay-block-text">
+              Интернет-магазин<br> вязаных игрушек
+            </p>
+          <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider"> <!-- блок под слайдер -->
+        <div class="templates-slider">
+          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
         </div>
         <a class="templates-link" href="blank.html">
         <img class="templates-img" src="img/a.jpg" width="358" height="578" alt="шаблон A+">
         </a>
+        <div class="pay-block pay-block-a-plus">
+          <h3 class="pay-block-title">A Plus</h3>
+            <p class="pay-block-text">
+              Лендинг курсов повышения<br> квалификации
+            </p>
+        <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider"> <!-- блок под слайдер -->
+        <div class="templates-slider">
+          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
         </div>
         <a class="templates-link" href="blank.html">
         <img class="templates-img" src="img/kvast.jpg" width="358" height="578" alt="шаблон Кваст">
         </a>
+        <div class="pay-block pay-block-kvast">
+          <h3 class="pay-block-title">Кваст</h3>
+            <p class="pay-block-text">
+              Промо-сайт производителя<br> крафтового кваса
+            </p>
+          <button class="pay-block-button" type="submit">9900</button>
+        </div>
       </li>
     </ul>
   </div>
-    <div class="pagination">
+
+  <div class="pagination">
     <ul class="pagination-list">
       <li class="pagination-item pagination-item-one">
         <a class="pagination-link">1</a>
@@ -172,18 +224,18 @@
       </li>
     </ul>
     </div>
+   </section>
   </div>
-  </section>
 
   <section class="contacts">
     <div class="contacts-block">
-      <h2 class="hidden-title">Как нас найти</h2> <!-- скрытый заголовок -->
+      <h2 class="hidden-title">Как нас найти</h2>
       <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
       <div class="contacts-information">
         <span>NЁRDS DESIGN STUDIO</span>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. <a class="contacts-phone" href="tel:78122757575">+7 (812) 275-75-75</a></p>
-        <button class="button" type="submit">Напишите нам</button>
+        <button class="button-contacts-block" type="submit">Напишите нам</button>
       </div>
       <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
     </div>
@@ -196,13 +248,35 @@
     <div class="footer-social-list-block">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#"><svg width="35" height="23" viewBox="0 0 35 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M20.138 11.51C21.094 11.201 22.318 13.55 23.621 14.449C24.599 15.13 25.348 14.983 25.348 14.983L28.821 14.933C28.821 14.933 30.636 14.821 29.778 13.379C29.707 13.259 29.275 12.31 27.193 10.357C25.016 8.31404 25.311 8.64504 27.932 5.11304C29.529 2.96004 30.168 1.64504 29.968 1.08504C29.776 0.546037 28.603 0.686037 28.603 0.686037L24.69 0.713037C24.309 0.714037 23.986 0.832037 23.839 1.22804C23.836 1.23204 23.218 2.89404 22.394 4.30704C20.653 7.29604 19.958 7.45504 19.67 7.26804C19.009 6.83504 19.176 5.53104 19.176 4.60404C19.176 1.70704 19.608 0.499037 18.33 0.187037C17.903 0.0830374 17.591 0.0150374 16.502 0.00503741C15.11 -0.0159626 13.928 0.00503743 13.258 0.334037C12.813 0.557037 12.472 1.04604 12.679 1.07404C12.939 1.10904 13.522 1.23404 13.834 1.66004C14.235 2.21204 14.223 3.44904 14.223 3.44904C14.223 3.44904 14.452 6.86004 13.683 7.28304C13.155 7.57304 12.433 6.98104 10.88 4.26704C10.087 2.87904 9.48797 1.34504 9.48797 1.34504C9.48797 1.34504 9.37197 1.06004 9.16197 0.904037C8.91197 0.719037 8.56197 0.660037 8.56197 0.660037L4.84797 0.684037C4.84797 0.684037 4.28997 0.700037 4.08497 0.946037C3.90297 1.16404 4.06997 1.61404 4.06997 1.61404C4.06997 1.61404 6.97897 8.49504 10.273 11.961C13.293 15.143 16.725 14.932 16.725 14.932H18.28C18.28 14.932 18.749 14.878 18.989 14.62C19.213 14.38 19.203 13.929 19.203 13.929C19.203 13.929 19.172 11.82 20.138 11.51Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="-0.000732422" width="34.0083" height="22.9971" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+</a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#"><svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+</svg>
+</a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+</svg>
+</a>
         </li>
       </ul>
     </div>
@@ -212,5 +286,22 @@
     </div>
   </div>
 </footer>
+<!--
+<div class="contacts-popup">
+    <h2 class="contacts-popup-title">Напишите нам</h2>
+    <form class="contacts-popup-form" method="get" action="https://echo.htmlacademy.ru">
+      <label for="nickname">Ваше имя:</label>
+      <input type="text" id="nickname" name="nickname" placeholder="Имя Фамилия">
+      <label for="user-email">Ваш e-mail:</label>
+      <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+      <br>
+      <label for="content">Текст письма:</label>
+      <br>
+      <textarea rows="10" cols="50" id="content" name="content" placeholder="В свободной форме"></textarea>
+      <br>
+      <button class="button-contacts-popup" type="submit">Отправить</button>
+    </form>
+  </div>
+-->
   </body>
 </html>
