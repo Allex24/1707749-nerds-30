@@ -36,60 +36,67 @@
 
   <div class="page-catalog">
   <section class="preview">
-    <h2 class="hidden-title">Фильтр товаров</h2>
+    <h2 class="visually-hidden">Фильтр товаров</h2>
 
      <form class="form-sorting" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="block-price">
+      <fieldset class="filter-item">
         <legend>Стоимость:</legend>
-        <div class="price-selection">
-        </div> <!-- Блок под бегунок -->
-        <div class="price">
-          <span>от</span>
-          <input class="price-entry price-min" type="text" name="price_min" value="0" placeholder="0">
-        </div>
-        <div class="price">
-          <span>до</span>
-          <input class="price-entry price-max" type="text" name="price_max" value="15000" placeholder="15000">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="15000">
+            </label>
+          </div>
         </div>
       </fieldset>
       <fieldset>
-        <legend>Сетка:</legend>
-        <ul class="setka-list">
-          <li class="setka-item">
-            <input type="radio" name="setka-type" value="adaptive" id="setka-adaptive" checked>
+        <legend class="legend-title">Сетка:</legend>
+        <ul>
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="adaptive" id="setka-adaptive" checked>
             <label for="setka-adaptive">Адаптивная</label>
           </li>
-          <li class="setka-item">
-            <input type="radio" name="setka-type" value="fixed" id="setka-fixed">
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="fixed" id="setka-fixed">
             <label for="setka-fixed">Фиксированная</label>
           </li>
-          <li class="setka-item">
-            <input type="radio" name="setka-type" value="rubber" id="setka-rubber">
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="rubber" id="setka-rubber">
             <label for="setka-rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Особенности:</legend>
+        <legend class="legend-title">Особенности:</legend>
         <ul class="feature-selection-list">
-          <li class="feature-selection-item">
-            <input type="checkbox" name="slider" id="filter-slider" checked>
+          <li class="filter-option feature-selection-item">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
-          <li class="feature-selection-item">
-            <input type="checkbox" name="blok-preimushchestv" id="filter-blok-preimushchestv">
+          <li class="filter-option feature-selection-item">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blok-preimushchestv" id="filter-blok-preimushchestv">
             <label for="filter-blok-preimushchestv">Блок преимуществ</label>
           </li>
-          <li class="feature-selection-item">
-            <input type="checkbox" name="news" id="filter-news" checked>
+          <li class="filter-option feature-selection-item">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
             <label for="filter-news">Новости</label>
           </li>
-          <li class="feature-selection-item">
-            <input type="checkbox" name="gallery" id="filter-gallery">
+          <li class="filter-option feature-selection-item">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
             <label for="filter-gallery">Галерея</label>
           </li>
-          <li class="feature-selection-item">
-            <input type="checkbox" name="basket" id="filter-basket">
+          <li class="filter-option feature-selection-item">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
@@ -112,58 +119,46 @@
   </div>
 
   <section class="templates">
-    <h2 class="hidden-title">Список готовых шаблонов</h2> <!-- заголовок в дальнейшем будет скрыт -->
+    <h2 class="visually-hidden">Список готовых шаблонов</h2>
      <div class="templates-block">
       <ul class="templates-list">
         <li class="templates-item">
-          <div class="templates-slider">
-            <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-          </div>
           <a class="templates-link" href="blank.html">
-          <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
+            <img class="templates-img" src="img/sedona.jpg" width="358" height="578" alt="шаблон Sedona">
           </a>
         <div class="pay-block pay-block-sedona">
           <h3 class="pay-block-title">Sedona</h3>
             <p class="pay-block-text">
               Информационный сайт<br> для туристов
             </p>
-          <button class="pay-block-button" type="submit">9900</button>
+          <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider">
-          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-        </div>
         <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/pink.jpg" width="358" height="578" alt="шаблон Pink">
+          <img class="templates-img" src="img/pink.jpg" width="358" height="578" alt="шаблон Pink">
         </a>
         <div class="pay-block pay-block-pink-app">
           <h3 class="pay-block-title">Pink App</h3>
             <p class="pay-block-text">
               Продуктовый лендинг<br> приложения для iOS и Android
             </p>
-          <button class="pay-block-button" type="submit">9900</button>
+          <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider">
-          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-        </div>
         <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/barbershop-borodinski.jpg" width="358" height="578" alt="шаблон Barbershop Borodinski">
+          <img class="templates-img" src="img/barbershop-borodinski.jpg" width="358" height="578" alt="шаблон Barbershop Borodinski">
         </a>
         <div class="pay-block pay-block-barbershop">
           <h3 class="pay-block-title">Barbershop</h3>
             <p class="pay-block-text">
               Сайт салона красоты.<br> Для мужчин, да.
             </p>
-          <button class="pay-block-button" type="submit">9900</button>
+          <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider">
-          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-        </div>
         <a class="templates-link" href="blank.html">
           <img class="templates-img" src="img/mishka.jpg" width="358" height="578" alt="шаблон Mishka">
         </a>
@@ -172,37 +167,31 @@
             <p class="pay-block-text">
               Интернет-магазин<br> вязаных игрушек
             </p>
-          <button class="pay-block-button" type="submit">9900</button>
+          <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider">
-          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-        </div>
         <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/a.jpg" width="358" height="578" alt="шаблон A+">
+          <img class="templates-img" src="img/a.jpg" width="358" height="578" alt="шаблон A+">
         </a>
         <div class="pay-block pay-block-a-plus">
           <h3 class="pay-block-title">A Plus</h3>
             <p class="pay-block-text">
               Лендинг курсов повышения<br> квалификации
             </p>
-        <button class="pay-block-button" type="submit">9900</button>
+        <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
       <li class="templates-item">
-        <div class="templates-slider">
-          <img class="templates-slider-img" src="img/Shape.png" width="360" height="40" alt="шапка шаблона">
-        </div>
         <a class="templates-link" href="blank.html">
-        <img class="templates-img" src="img/kvast.jpg" width="358" height="578" alt="шаблон Кваст">
+          <img class="templates-img" src="img/kvast.jpg" width="358" height="578" alt="шаблон Кваст">
         </a>
         <div class="pay-block pay-block-kvast">
           <h3 class="pay-block-title">Кваст</h3>
             <p class="pay-block-text">
               Промо-сайт производителя<br> крафтового кваса
             </p>
-          <button class="pay-block-button" type="submit">9900</button>
+          <button class="pay-block-button" type="submit">9 900</button>
         </div>
       </li>
     </ul>
@@ -229,7 +218,7 @@
 
   <section class="contacts">
     <div class="contacts-block">
-      <h2 class="hidden-title">Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Нёрдс на карте">
       <div class="contacts-information">
         <span>NЁRDS DESIGN STUDIO</span>
