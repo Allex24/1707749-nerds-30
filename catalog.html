@@ -63,16 +63,16 @@
         <legend class="legend-title">Сетка:</legend>
         <ul>
           <li class="filter-option filter-radio">
-            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="adaptive" id="setka-adaptive" checked>
-            <label for="setka-adaptive">Адаптивная</label>
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="adaptive" id="filter-radio-adaptive" checked>
+            <label for="filter-radio-adaptive">Адаптивная</label>
           </li>
           <li class="filter-option filter-radio">
-            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="fixed" id="setka-fixed">
-            <label for="setka-fixed">Фиксированная</label>
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="fixed" id="filter-radio-fixed">
+            <label for="filter-radio-fixed">Фиксированная</label>
           </li>
           <li class="filter-option filter-radio">
-            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="rubber" id="setka-rubber">
-            <label for="setka-rubber">Резиновая</label>
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="setka-type" value="rubber" id="filter-radio-rubber">
+            <label for="filter-radio-rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
@@ -84,8 +84,8 @@
             <label for="filter-slider">Слайдер</label>
           </li>
           <li class="filter-option feature-selection-item">
-            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blok-preimushchestv" id="filter-blok-preimushchestv">
-            <label for="filter-blok-preimushchestv">Блок преимуществ</label>
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blok-preimushchestv" id="filter-blok-advantages">
+            <label for="filter-blok-advantages">Блок преимуществ</label>
           </li>
           <li class="filter-option feature-selection-item">
             <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
@@ -229,8 +229,25 @@
       <img class="contacts-point-map" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
     </div>
   </section>
-
 </main>
+
+<!--
+<section class="contacts-popup">
+    <h2 class="contacts-popup-title">Напишите нам</h2>
+    <form class="contacts-popup-form" method="get" action="https://echo.htmlacademy.ru">
+      <label for="nickname">Ваше имя:</label>
+      <input type="text" id="nickname" name="nickname" placeholder="Имя Фамилия">
+      <label for="user-email">Ваш e-mail:</label>
+      <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+      <br>
+      <label for="content">Текст письма:</label>
+      <br>
+      <textarea rows="10" cols="50" id="content" name="content" placeholder="В свободной форме"></textarea>
+      <br>
+      <button class="button-contacts-popup" type="submit">Отправить</button>
+    </form>
+  </section>
+-->
 
 <footer class="main-footer">
   <div class="main-footer-block">
@@ -275,22 +292,5 @@
     </div>
   </div>
 </footer>
-<!--
-<div class="contacts-popup">
-    <h2 class="contacts-popup-title">Напишите нам</h2>
-    <form class="contacts-popup-form" method="get" action="https://echo.htmlacademy.ru">
-      <label for="nickname">Ваше имя:</label>
-      <input type="text" id="nickname" name="nickname" placeholder="Имя Фамилия">
-      <label for="user-email">Ваш e-mail:</label>
-      <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-      <br>
-      <label for="content">Текст письма:</label>
-      <br>
-      <textarea rows="10" cols="50" id="content" name="content" placeholder="В свободной форме"></textarea>
-      <br>
-      <button class="button-contacts-popup" type="submit">Отправить</button>
-    </form>
-  </div>
--->
-  </body>
+</body>
 </html>
