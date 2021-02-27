@@ -303,6 +303,9 @@ h3 {
   padding: 0;
   column-gap: 100px;
 }
+.feature-img {
+  background-color: var(--main-slide-color);
+}
 
 .feature-text {
   margin-bottom: 32px;
@@ -419,6 +422,10 @@ h3 {
   margin: 0;
 }
 
+.benefits-img {
+  background-color: var(--main-slide-color);
+}
+
 .benefits-right-block {
   margin-top: 43px;
 }
@@ -509,10 +516,13 @@ h3 {
   padding-bottom: 47px;
 }
 
+.partners-img {
+  background-color: var(--main-slide-color);
+}
+
 .partners-item {
   position: relative;
 }
-
 
 .partners-item::before {
   content: "";
@@ -559,11 +569,13 @@ h3 {
   position: relative;
 }
 
+ /** координаты для карты img
 .contacts-point-map {
   position: absolute;
-  top: 86px;
-  right: 387px;
-}
+   top: 25px;
+  right: 577px;
+ }
+**/
 
 .contacts-information {
   display: flex;
@@ -595,6 +607,7 @@ h3 {
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
+  outline: none;
   margin-top: 27px;
   padding: 17px 44px 15px 44px;
   cursor: pointer;
@@ -776,6 +789,7 @@ h3 {
   text-transform: uppercase;
   border-radius: 3px;
   border: none;
+  outline: none;
   padding: 17px 88px 15px 89px;
   margin-top: 5px;
 }
@@ -974,6 +988,10 @@ h3 {
     46px 0 0 0 var(--site-background);
  }
 
+ .templates-img {
+  background-color: var(--main-slide-color);
+ }
+
 
 .templates-list {
   display: flex;
@@ -996,13 +1014,6 @@ h3 {
   margin-right: 0;
 }
 
-.templates-slider-img {
-  opacity: 0.12;
-}
-
-.templates-slider-img:hover {
- opacity: 1.0;
-}
 
 /* pay-block */
 
@@ -1131,6 +1142,7 @@ h3 {
 
 .popup {
   position: fixed;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1142,6 +1154,10 @@ h3 {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+.popup-show {
+  display: block;
+}
+
 .contacts-popup {
   position: relative;
   display: flex;
@@ -1149,6 +1165,20 @@ h3 {
   margin-left: 100px;
 }
 
+.modal-close {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/close-cross.svg");
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  opacity: 0.3;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+/**
 .contacts-popup::before {
   position: absolute;
   content: "";
@@ -1161,12 +1191,15 @@ h3 {
   cursor: pointer;
 }
 
-.contacts-popup:hover::before {
+**/
+
+.modal-close:hover {
     opacity: 1;
 }
 
-.contacts-popup:active::before {
+.modal-close:active {
     opacity: 0.1;
+    outline: none;
 }
 
 .contacts-popup-title {
