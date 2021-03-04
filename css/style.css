@@ -32,6 +32,11 @@
   --border-popup-color:#D7DCDE;
   --border-popup-hover-color:#B4B9BB;
   --border-popup-focus-color:#000000;
+  --border-slider-controls: #C1C1C1;
+  --toggle-color: #cfcfcf;
+  --pay-block-button-active: rgba(255, 255, 255, 0.3);
+  --popup-box-shadow: rgba(0, 0, 0, 0.4);
+  --templates-item-box-shadow:  rgba(0, 1, 1, 0.25);
  }
 
 /* Global */
@@ -40,7 +45,7 @@
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -58,17 +63,13 @@ a {
 
 a.link-page {
   padding-bottom: 18px;
-  border-bottom: 2px solid #FB565A;
+  border-bottom: 2px solid var(--line-link-color);
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-ul {
-  list-style: none;
 }
 
 .visually-hidden {
@@ -143,6 +144,10 @@ ul {
 .site-navigation {
   margin: 0;
   padding: 0;
+}
+
+.site-navigation li {
+  list-style-type: none;
 }
 
 .site-navigation a,
@@ -269,11 +274,10 @@ ul {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid #C1C1C1;
+  border: 2px solid var(--border-slider-controls);
   bottom: 4px;
   right: 4px;
 }
-
 
 /* section features */
 
@@ -293,16 +297,16 @@ h3 {
   margin-bottom: 0;
 }
 
+.feature-item {
+  list-style-type: none;
+}
+
 .features-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   column-gap: 100px;
-}
-
-.feature-img {
-  background-color: var(--main-slide-color);
 }
 
 .feature-text {
@@ -321,6 +325,19 @@ h3 {
   font-size: 16px;
   line-height: 18px;
 }
+
+.feature-img-red {
+  background: var(--button-red-color);
+}
+
+.feature-img-green {
+  background: var(--button-green-color);
+}
+
+.feature-img-yellow {
+  background: var(--button-yellow-color);
+}
+
 
 .feature-butto-red {
   background: var(--button-red-color);
@@ -390,6 +407,7 @@ h3 {
 .benefits-list li {
   position: relative;
   padding: 0 0 25px 35px;
+  list-style-type: none;
 }
 
 .benefits-list li:last-child {
@@ -518,6 +536,7 @@ h3 {
 
 .partners-item {
   position: relative;
+  list-style-type: none;
 }
 
 .partners-item::before {
@@ -542,7 +561,6 @@ h3 {
 .partners-list:last-child {
   padding-right: 41px;
 }
-
 
 .partners-item img {
   opacity: 0.2;
@@ -716,7 +734,7 @@ h3 {
   border: 8px solid var(--range-controls-toggle-border);
   background-color: var(--range-controls-toggle-background);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--toggle-color);
   cursor: pointer;
 }
 
@@ -758,7 +776,10 @@ h3 {
   font-size: 16px;
   line-height: 20px;
   color: var(--text-color-grey);
-  style: none;
+}
+
+.form-sorting li {
+  list-style-type: none;
 }
 
 .form-sorting fieldset {
@@ -944,7 +965,7 @@ h3 {
 
 .templates-item {
   position: relative;
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--templates-item-box-shadow);
 }
 
 .templates-item:hover .pay-block {
@@ -1002,6 +1023,7 @@ h3 {
   min-height: 578px;
   margin-right: 42px;
   margin-bottom: 31px;
+  list-style-type: none;
 }
 
 .templates-item:nth-child(2n) {
@@ -1072,7 +1094,8 @@ h3 {
 
 .pay-block-button:active {
   background-color: var(--button-red-activ-color);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--pay-block-button-active);
+  outline: none;
 }
 
 .pay-block-button::after {
@@ -1122,6 +1145,7 @@ h3 {
 .pagination-item {
   padding-right: 11px;
   margin-left: 0;
+  list-style-type: none;
 }
 
 .pagination-item .pagination-link-next {
@@ -1142,7 +1166,7 @@ h3 {
   width: 960px;
   height: 590px;
   background: var(--site-background);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--popup-box-shadow);
 }
 
 .popup-show {
@@ -1298,6 +1322,10 @@ h3 {
   padding: 0;
 }
 
+.footer-social-item {
+  list-style-type: none;
+}
+
 .social-button {
   display: block;
   position: relative;
@@ -1305,7 +1333,7 @@ h3 {
   width: 81px;
   text-align: center;
   border-radius: 50%;
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--site-background);
 }
 
 .social-button svg {
@@ -1323,11 +1351,11 @@ h3 {
 }
 
 .social-button:hover {
-  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+  background: linear-gradient(0deg, #E74246, #E74246), var(--site-background);
 }
 
 .social-button:active {
-  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  background: linear-gradient(0deg, #D7373B, #D7373B), var(--site-background);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
