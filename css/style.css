@@ -194,8 +194,10 @@ img {
 
 /* preview */
 
-.slider {
+.slider-contanier {
   position: relative;
+  width: 1157px;
+  margin: 0 auto;
 }
 
 .slider-slogan {
@@ -210,9 +212,7 @@ img {
 
 .slider-block {
   display: flex;
-  width: 1157px;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .slide {
@@ -251,7 +251,7 @@ img {
   justify-content: space-between;
   position: absolute;
   bottom: 101px;
-  right: 675px;
+  left: 534px;
 }
 
 .slider-controls button {
